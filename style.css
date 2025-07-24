@@ -103,6 +103,84 @@ section {
 }
 
 
+/* Product ,Plants Section*/
+.product-section {
+  margin: 100px 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.section-header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.section-header .highlight {
+  color: rgb(233, 90, 8);
+}
+
+.section-header p {
+  width: 60%;
+  margin: 0 auto;
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Grid  Cards */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+/* Single Card */
+.product-card {
+  background: #fff;
+  padding: 0 0 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 0;
+}
+
+.product-title {
+  font-weight: 700;
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+.product-price {
+  font-weight: 400;
+  font-size: 22px;
+  margin: 5px 0 15px;
+}
+
+/* Button */
+.product-card button {
+  background-color: rgb(233, 90, 8);
+  color: #fff;
+  padding: 10px;
+  border: none;
+  font-weight: 400;
+  font-size: 16px;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.product-card button:hover {
+  background-color: rgb(66, 23, 0);
+}
+
+
+
 /* responsive  */
 /* mobile - small   */
 
@@ -119,6 +197,9 @@ section {
   .hero-image {
     width: 100%;
   }
+   .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* tab device medium  */
@@ -130,5 +211,12 @@ section {
   .hero-text,
   .hero-image {
     width: 100%;
+  }
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-header p {
+    width: 90%;
   }
 }

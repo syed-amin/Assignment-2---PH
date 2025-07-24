@@ -13,7 +13,7 @@ body {
 }
 
 img {
-  width: 100%;
+  /* width: 100%; */
   display: block;
 }
 
@@ -179,7 +179,69 @@ section {
   background-color: rgb(66, 23, 0);
 }
 
+/* Flower Lover Section*/
+.lover-section {
+  margin: 100px 0px;
+  padding: 60px 20px;
+}
 
+.lover-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 200px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.lover-image {
+  position: relative;
+  flex: 1;
+}
+
+.lover-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  
+}
+
+.trusted-badge {
+  position: absolute;
+
+
+  width: 286px;
+  height: 286px;
+  
+  top: -220px;
+  left: 200px;
+  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.973));
+  
+}
+
+
+.lover-text {
+  flex: 1;
+}
+
+.lover-text h2 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.lover-text ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #666;
+}
+
+.lover-text li {
+  margin-bottom: 16px;
+  font-size: 22px;
+  
+}
 
 /* responsive  */
 /* mobile - small   */
@@ -200,6 +262,21 @@ section {
    .product-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+   .lover-container {
+    flex-direction: column;
+    gap: 16px;
+    
+  }
+  .trusted-badge {
+    display: none; 
+  }
+  .lover-text h2 {
+    font-size: 32px;
+  }
+  .lover-text li {
+    font-size: 18px;
+  }
 }
 
 /* tab device medium  */
@@ -207,7 +284,6 @@ section {
   .hero-banner {
     flex-direction: column-reverse;
   }
-
   .hero-text,
   .hero-image {
     width: 100%;
@@ -215,8 +291,21 @@ section {
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-
   .section-header p {
     width: 90%;
   }
+  .lover-container {
+    flex-direction: column;
+    gap: 60px;
+  }
+   .trusted-badge {
+    display: none; 
+  }
+  .lover-text h2 {
+    font-size: 40px;
+  }
+  .lover-text li {
+    font-size: 20px;
+  }
+
 }

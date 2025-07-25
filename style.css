@@ -10,6 +10,7 @@
 body {
     font-family: "Noto Serif", serif;
     color: #000;
+    background-color: #bcdfef3f;
 }
 
 img {
@@ -207,14 +208,13 @@ section {
 }
 
 .trusted-badge {
+    
     position: absolute;
-
     top: -220px;
     left: 200px;
     filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.973));
 
 }
-
 
 .lover-text {
     flex: 1;
@@ -308,7 +308,7 @@ section {
 /* subscription section */
 .subscription {
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    background: linear-gradient(rgba(0, 0, 0, 0.186), rgba(0, 0, 0, 0.121)),
         url("assets/news-letter-bg.png") center/cover no-repeat;
 
     padding: 200px 0;
@@ -322,7 +322,8 @@ section {
 }
 
 .subscription .contact {
-    width: 30%;
+    width: 830px;
+    height: 50px;
     margin: 0 auto;
     position: relative;
 }
@@ -330,6 +331,8 @@ section {
 .subscription .contact input,
 button {
     padding: 10px 15px;
+    height: 50px;
+    
 }
 
 .subscription input {
@@ -347,101 +350,72 @@ button {
     height: 100%;
     cursor: pointer;
 }
-/* responsive  */
-/* mobile - small   */
-@media screen and (max-width: 576px) {
-    .navbar-menu {
-        display: none;
-    }
 
-    .hero-banner {
-        flex-direction: column-reverse;
-    }
-
-    .hero-text,
-    .hero-image {
-        width: 100%;
-    }
-
-    .product-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .lover-container {
-        flex-direction: column;
-        gap: 16px;
-
-    }
-
-    .trusted-badge {
-        display: none;
-    }
-
-    .lover-text h2 {
-        font-size: 32px;
-    }
-
-    .lover-text li {
-        font-size: 18px;
-    }
-
-    .deals-card {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .deals p {
-        width: 100%;
-    }
-
-    .deal-card2 {
-        grid-column: span 1;
-    }
-
-    .subscription .contact {
-        width: 80%;
-    }
+/*6, footer par  */
+footer {
+    padding: 0px 20px 50px;
 }
 
-/* tab device medium  */
-@media screen and (min-width: 576px) and (max-width: 992px) {
-    .hero-banner {
-        flex-direction: column-reverse;
-    }
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+    align-items: flex-start;
+}
 
-    .hero-text,
-    .hero-image {
-        width: 100%;
-    }
-    .product-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .section-header p {
-        width: 90%;
-    }
-    .lover-container {
-        flex-direction: column;
-        gap: 60px;
-    }
-    .trusted-badge {
-        display: none;
-    }
-    .lover-text h2 {
-        font-size: 40px;
-    }
-    .lover-text li {
-        font-size: 20px;
-    }
-    .deals-card {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .deals p {
-        width: 100%;
-    }
-    .deal-card2 {
-        grid-column: span 1;
-    }
-    .subscription .contact {
-        width: 80%;
-    }
+.logo img {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.logo p {
+    color: rgba(0, 0, 0, 0.5);
+    max-width: 250px;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.links-container {
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    
+}
+
+.links a {
+    text-decoration: none;
+    font-weight: bold;
+    color: grey;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #ff0000;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 24px;
+    
+}
+
+.social-links a img {
+    width: 100%;
+    transition: transform 0.1s ease;
+}
+
+.social-links a img:hover {
+    transform: scale(1.1);
 
 }

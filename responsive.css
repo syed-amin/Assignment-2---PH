@@ -1,0 +1,132 @@
+/* responsive  */
+/* mobile - small   */
+@media screen and (max-width: 576px) {
+    .navbar-menu {
+        display: none;
+    }
+    .hero-banner {
+        flex-direction: column-reverse;
+    }
+    .hero-text,
+    .hero-image {
+        width: 100%;
+    }
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .lover-container {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .trusted-badge{
+    
+    position: absolute;
+    top: -120px;
+    left: 150px;
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.973));
+
+}
+    .lover-text h2 {
+        font-size: 32px;
+    }
+    .lover-text li {
+        font-size: 18px;
+    }
+    .deals-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .deals p {
+        width: 100%;
+    }
+    .deal-card2 {
+        grid-column: span 1;
+    }
+    .subscription .contact {
+        width: 80%;
+    }
+    /* footer */
+     .footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+  }
+
+  .social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+}
+
+
+/* ----------------------------------------- */
+
+/* tab device medium  */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .hero-banner {
+        flex-direction: column-reverse;
+    }
+
+    .hero-text,
+    .hero-image {
+        width: 100%;
+    }
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .section-header p {
+        width: 90%;
+    }
+    .lover-container {
+        flex-direction: column;
+        gap: 60px;
+    }
+    .trusted-badge {
+        display: none;
+    }
+    .lover-text h2 {
+        font-size: 40px;
+    }
+    .lover-text li {
+        font-size: 20px;
+    }
+    .deals-card {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .deals p {
+        width: 100%;
+    }
+    .deal-card2 {
+        grid-column: span 1;
+    }
+    .subscription .contact {
+        width: 80%;
+    }
+
+    .footer-content {
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px;
+  }
+
+  .social-links {
+    justify-content: flex-start;
+  }
+}
